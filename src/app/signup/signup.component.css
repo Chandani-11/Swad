@@ -1,0 +1,37 @@
+
+.background-left {
+
+    background-image: url("https://cdn.hipwallpaper.com/i/0/68/OG1FLx.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    
+}
+
+.background-right {
+  background-color: rgb(211, 202, 202);
+}
+.card {
+    background-color: transparent;
+    color: rgb(59, 2, 2);
+}
+.text-muted {
+    color:rgb(59, 2, 2) !important;
+}
+.btn[type=submit]{
+    border-radius: 50px;
+    background-color: rgb(46, 6, 6);
+    color: white;
+}
+h1{
+    color:rgb(59, 2, 2);
+    font-family: fantasy;
+    text-align: center;
+    margin-top: 25%;
+}
+p{
+    color: rgb(59, 2, 2);
+    font-size: 27px;
+    font-family: fantasy;
+    text-align: center;
+}

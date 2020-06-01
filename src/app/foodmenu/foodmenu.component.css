@@ -1,0 +1,33 @@
+.card-body{
+    background-color: rgb(46, 44, 44);
+    color: white;
+}
+hr{
+    background-color: white;
+}
+.row{
+    background-color: rgb(168, 243, 243);
+}
+button{
+    width: 75px;
+    height: 40px;
+    margin-top: auto;
+    margin-left: 8%;
+    margin-bottom:3%;
+}    
+h5,p{
+    color: white;
+    font-family: fantasy;
+    font-size: 30px;
+}
+table{
+    color: white;
+
+}
+h3{
+    text-align: center;
+}
+img{
+  height: 200px;
+  width: 300px;
+}

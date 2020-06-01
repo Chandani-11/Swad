@@ -1,0 +1,10 @@
+.row{
+    background-color: rgb(46, 44, 44);
+    font-family: fantasy;
+    color: white;
+    
+}
+.card-body{
+    background-color: rgb(168, 243, 243);
+    color: black;
+}

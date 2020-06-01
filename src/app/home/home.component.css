@@ -1,0 +1,39 @@
+.vertical-divider{
+    border-right:1px solid #ddd;
+}
+p{
+    font-family: Lucida Console, Courier, monospace;
+    font-weight: 800;
+    font-style: inherit;
+
+    color: rgb(61, 51, 43);
+}
+h2{
+    color: #342D7E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.upper{
+    background-color:  wheat;
+    padding-top: 2;
+    padding-bottom: 2%;
+    text-align: center;
+    
+    
+}
+.lower{
+    background-color: rgb(168, 243, 243);
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+
+p{
+    font-family: fantasy;
+    font-size: 65px;
+    padding-top: 8%;
+    text-align: center;
+    color: black;
+    
+    
+}

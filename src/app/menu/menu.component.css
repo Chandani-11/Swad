@@ -1,0 +1,26 @@
+.btn-outline-light {
+    margin-left: 8px;
+    border-radius: 50px;
+}
+nav{
+    border-bottom: 1px solid #a7c6f7;
+    
+}
+img{
+    height: 60px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand
+{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: rgb(27, 27, 27);
+    
+}
+.nav-link{
+    margin-left: 15px;
+}

@@ -1,0 +1,356 @@
+<div class="row">
+    <div class="offset-sm-1 col-sm-10">
+      <div class="card">
+        <div class="card-body">
+           <div class="card-title text center">
+             <h3><b>All Items</b></h3>
+           </div>
+          
+          <div class="card-text">
+            <table class="table table-hover table-bordered">
+              <tbody>
+                <tr>
+                  
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://profusioncurry.com/wp-content/uploads/2019/07/Curry-Fried-Rice-.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Curry Fied Rice</h5>
+                      <small class="text-success"> {{90| currency: 'INR'}} </small>
+                   </div>
+                   
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total1()" required>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes"  required>   
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                     
+                    <div class="form-group col-sm-6">
+                      <p> Total :  {{ this.cost1 }}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Curry Fried Rice')" >Order</button>   
+                  
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  
+                  </td>
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://www.treebo.com/blog/wp-content/uploads/2016/12/Chicken_Hyderabadi_Biryani.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix"> Chicken Biryani</h5> 
+                     <small class="text-success"> {{150| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total2()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total :  {{this.cost2}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Chicken Biryani')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                  
+                </tr>
+                <tr>
+                    
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://recipes.timesofindia.com/thumb/52416693.cms?width=1200&height=1200"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Pav - Bhaji</h5> 
+                      <small class="text-success"> {{100| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total3()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total :  {{this.cost3}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Pav Bhaji')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://static.toiimg.com/photo/67287556/2.jpg?width=748&resize=4"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Chhole-Bhature</h5> 
+                     <small class="text-success"> {{60| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total4()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select>
+                    <p>Select Size</p> 
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total : {{this.cost4}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Chhole Bhature')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                 
+                </tr>
+                <tr>
+                  
+                    
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://www.tarladalal.com/members/9306/procstepimgs/kadai-paneer_dsc5031-(45)-18-185904.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Paneer Kadai</h5> 
+                      <small class="text-success"> {{250| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total5()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select>
+                    <p>Select Size</p> 
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total :  {{this.cost5}}</p>
+                      
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Paneer Kadai')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://i1.wp.com/cookingfromheart.com/wp-content/uploads/2017/09/Veg-Biryani-in-Pressure-Cooker-6.jpg?resize=1024%2C680&ssl=1"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Veg - Biryani</h5> 
+                     <small class="text-success"> {{150| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total6()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total :  {{this.cost6}}</p>
+                    
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Veg Biryani')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://truffle-assets.imgix.net/d510e7be-landscape16x9-chilli_paneer_fry_with_homemade_paneer_still.png"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Paneer-Chilli</h5> 
+                      <small class="text-success"> {{150| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total7()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total :  {{this.cost7}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Paneer-Chilli')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/02/kadai-mushroom-gravy-recipe-11-500x500.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Mushroom-Kadai</h5> 
+                     <small class="text-success"> {{250| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total8()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total :  {{this.cost8}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Mushroom-Kadai')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://i.ndtvimg.com/i/2016-11/dal-makhani_620x350_41478501912.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Dal Makhani</h5> 
+                      <small class="text-success"> {{100| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total9()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total: {{this.cost9}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Dal Makhani')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://www.cookwithmanali.com/wp-content/uploads/2014/08/Dal-Tadka-500x375.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Dal -  Tadka</h5> 
+                     <small class="text-success"> {{85| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total10()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total : {{this.cost10}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Dal Tadka')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://www.whiskaffair.com/wp-content/uploads/2016/08/Chettinad-Egg-Curry-4.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Egg - Curry</h5> 
+                      <small class="text-success"> {{120| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total11()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total : {{this.cost11}}</p>
+                     
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Egg Curry')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                  <td><img class="mr-3 mb-3 img-fluid rounded img-responsive " src="https://www.whiskaffair.com/wp-content/uploads/2020/04/Kadai-Chicken-1.jpg"  alt="Generic placeholder image">
+                    <div class="col-xs-7 col-sm-7 col-md-7">
+                      <h5 class="mt-0 clearfix">Kadai Chicken</h5> 
+                     <small class="text-success"> {{200| currency: 'INR'}} </small>
+                   </div>
+                   <div class="form-row">
+                    <div class="form-group col-sm-6">
+                      <input type="number" class="form-control" placeholder="Quantity" [(ngModel)]="quantity" (input)="total12()">
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <select class="form-control" name="size" [(ngModel)]="sizes" required> 
+                        <option *ngFor="let size of sizes" [value]="size.value">{{size.title}}</option> 
+                    </select> 
+                    <p>Select Size</p>
+                    </div>
+                
+                    <div class="form-group col-sm-6">
+                      <p> Total: {{this.cost12}} </p>
+                      
+                      
+                    </div>
+                    <button class="btn btn-warning" (click)="order('Kadai Chicken')">Order</button>
+                    <button class="btn btn-secondary " (click)="clear()">Cancel</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+              
+        
+          </div>
+        </div>
+      </div>
+   </div>
+</div>

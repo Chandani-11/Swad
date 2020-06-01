@@ -1,0 +1,24 @@
+<div class="card text-blank mt-3">
+    <div class="card-body">
+      <div class="card-title">
+        <h3>Bill Details</h3>
+        <h4> Dish: {{orderData.fname}} </h4>
+        <h5>Total cost: {{ orderData.cost }}</h5>
+      </div>
+  
+      <div class="card-text">
+         <h5>Quantity: {{ orderData.quantity}}</h5>
+         <h5>Size: {{ orderData.sizes }}</h5>
+      </div>
+  
+    </div>
+  
+    <div class="card-footer text-muted">
+      Ordered on {{ orderData.created.toDate() | date: 'MMM dd, yyyy' }}
+  
+      <button type="button" class="btn btn-danger card-link btn-sm float-right" 
+      *ngIf="user && user.uid == orderData.owner" (click)="delete()">Delete</button>
+  
+    </div>
+  
+  </div>

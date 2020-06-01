@@ -1,0 +1,23 @@
+.row{
+    background: url("https://image.freepik.com/free-vector/cute-fast-food-cartoon-seamless-pattern-background-wallpaper_40564-113.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.card{
+    background-color: transparent !important;
+    color: rgb(44, 9, 9);
+    border: none;
+    margin-top: 35%;
+}
+.btn[type=submit]{
+    border-radius: 50px;
+    color: rgb(44, 9, 9);
+}
+.btn-link{
+    color: rgb(44, 9, 9);   
+}
+
+h1{
+    color: #fff;
+}

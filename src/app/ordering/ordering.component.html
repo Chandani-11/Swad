@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="offset-sm-1 col-sm-10">
+      <div class="card text-blank"> 
+          <div class="card-body"> 
+             <div class="card-title text-center">
+                <h3><b>ORDERS</b></h3>
+             </div>
+             <hr/>
+             <div class="card-text">
+                 <div class="row">
+                     <div class="col-sm-9" >
+                        <h3> {{user.firstname + ' ' + user.lastname}} </h3>
+                        <h4> {{user.email}} </h4>
+                     </div>
+                     
+                 </div>
+
+             </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+    <div class="offset-sm-1 col-sm-10">
+        <div class="card text-blank">
+            <div class="card-body">
+               <div class="card-title">
+                   <h4> All Orders  ( {{Orders.length}}  )</h4>
+               </div>
+               <div class="card-text">
+                 <app-cart  *ngFor="let order of Orders" [order]="order" (onDelete)="onDelete()"></app-cart>
+               </div>
+            </div>
+        </div>
+    </div>
+
+</div>
